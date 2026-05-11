@@ -1,0 +1,130 @@
+{
+  "users": [
+    {
+      "id": "dc67f652a97446d8ad218a2d0ab83913",
+      "login": "vanyc",
+      "passwordSalt": "54d4442b282941b3834bcfece75096eb",
+      "passwordHash": "3EBA7521D7C880076457CDEB12B3B74FEA5EA8367E66F1D66960244933C681A9"
+    },
+    {
+      "id": "1e2ad15e351546e08166e0531b23efc5",
+      "login": "Stepan",
+      "passwordSalt": "d0edda76ad284045ba9a281622240077",
+      "passwordHash": "2F66450D3D95ADD15238E5DEDC0BE0DDFE1A0C005280B2F8C86428F6F0A6AC9A"
+    },
+    {
+      "id": "5c7d034ef728479cacf761eb6a0b866e",
+      "login": "Pop",
+      "passwordSalt": "90120397b2234d8f81f7e1ca1fd28931",
+      "passwordHash": "8D170BA0D954B41001B9B50ED0FFAD724C66888F5182F776CC77E8A705EEC012"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "f3f1901240d1443fb2761dac685d0e9254c4af426e664738aec69c7d13f644f3",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T10:41:00.1309329+00:00"
+    },
+    {
+      "token": "2d018a845a3e48b19afad432407d209d402c1677df9a4c7ab059c1f66e2eb029",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T10:54:48.9253056+00:00"
+    },
+    {
+      "token": "5a019a1a4ed94d91b9f53aeec1e35709d9c09706311a469e81c400c5856d0868",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T11:06:52.1256621+00:00"
+    },
+    {
+      "token": "1b334100e50d4a2fa0aed1bcc4705b639e00eab690664179b8bc7eb95088f750",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T11:35:07.8681564+00:00"
+    },
+    {
+      "token": "d35c17258d0a4c4390f8fd8519867f547d6c332230814d539f001ea0feed94d5",
+      "userId": "1e2ad15e351546e08166e0531b23efc5",
+      "expiresAt": "2026-06-10T11:35:27.4012537+00:00"
+    },
+    {
+      "token": "d8f1f78a73f24a198b17df76f39b614e235acfc682764858827f12a9755c6318",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T11:41:11.9844791+00:00"
+    },
+    {
+      "token": "f97862ed2171414a8dddef0467e7cb70c6a26a3fc79d45868cdbcdae2d6772c9",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T11:46:47.8967656+00:00"
+    },
+    {
+      "token": "5e627d1f1f634657b18d403f0a91161a9f4b14b495084595be2fed2b44a53227",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T11:47:35.4903831+00:00"
+    },
+    {
+      "token": "91495fe1a398435f9b7b6cde60968cc5347cc4b4c30e4242bc5a92cc1e587278",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T12:02:54.9611105+00:00"
+    },
+    {
+      "token": "f0c4ac5297c5471f885656a029a0ed3b8601ce27283d453499764548ca290cf3",
+      "userId": "5c7d034ef728479cacf761eb6a0b866e",
+      "expiresAt": "2026-06-10T12:10:40.7284572+00:00"
+    }
+  ],
+  "progress": [
+    {
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "coins": 60,
+      "levels": {
+        "1": {
+          "completed": true,
+          "stars": 3
+        },
+        "2": {
+          "completed": false,
+          "stars": 0
+        },
+        "3": {
+          "completed": false,
+          "stars": 0
+        }
+      }
+    },
+    {
+      "userId": "1e2ad15e351546e08166e0531b23efc5",
+      "coins": 0,
+      "levels": {
+        "1": {
+          "completed": false,
+          "stars": 0
+        },
+        "2": {
+          "completed": false,
+          "stars": 0
+        },
+        "3": {
+          "completed": false,
+          "stars": 0
+        }
+      }
+    },
+    {
+      "userId": "5c7d034ef728479cacf761eb6a0b866e",
+      "coins": 24,
+      "levels": {
+        "1": {
+          "completed": true,
+          "stars": 3
+        },
+        "2": {
+          "completed": false,
+          "stars": 0
+        },
+        "3": {
+          "completed": false,
+          "stars": 0
+        }
+      }
+    }
+  ]
+}

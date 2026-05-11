@@ -1,0 +1,37 @@
+{
+  "users": [
+    {
+      "id": "dc67f652a97446d8ad218a2d0ab83913",
+      "login": "vanyc",
+      "passwordSalt": "54d4442b282941b3834bcfece75096eb",
+      "passwordHash": "3EBA7521D7C880076457CDEB12B3B74FEA5EA8367E66F1D66960244933C681A9"
+    }
+  ],
+  "sessions": [
+    {
+      "token": "f3f1901240d1443fb2761dac685d0e9254c4af426e664738aec69c7d13f644f3",
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "expiresAt": "2026-06-10T10:41:00.1309329+00:00"
+    }
+  ],
+  "progress": [
+    {
+      "userId": "dc67f652a97446d8ad218a2d0ab83913",
+      "coins": 0,
+      "levels": {
+        "1": {
+          "completed": false,
+          "stars": 0
+        },
+        "2": {
+          "completed": false,
+          "stars": 0
+        },
+        "3": {
+          "completed": false,
+          "stars": 0
+        }
+      }
+    }
+  ]
+}

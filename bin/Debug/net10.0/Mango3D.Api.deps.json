@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Mango3D.Api/1.0.0": {
+        "runtime": {
+          "Mango3D.Api.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Mango3D.Api/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
