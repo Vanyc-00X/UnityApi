@@ -24,3 +24,5 @@ E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\obj\Debug\net10.0\refint\Mango3D
 E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\obj\Debug\net10.0\Mango3D.Api.pdb
 E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\obj\Debug\net10.0\Mango3D.Api.genruntimeconfig.cache
 E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\obj\Debug\net10.0\ref\Mango3D.Api.dll
+E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\bin\Debug\net10.0\App_Data\game_store.json
+E:\Projects\UnityPJ\Mango3D\Backend\Mango3D.Api\obj\Debug\net10.0\Mango3D.Api.sourcelink.json
