@@ -222,6 +222,47 @@ app.MapGet("/api/leaderboard", async (JsonGameRepository db, CancellationToken c
     return Results.Json(ranked);
 });
 
+app.MapGet("/api/leaderboard/runs", async (JsonGameRepository db, CancellationToken ct) =>
+{
+    var store = await db.LoadAsync(ct).ConfigureAwait(false);
+    var rows = new List<RunLeaderboardRowDto>();
+    foreach (var user in store.Users)
+    {
+        var prog = store.Progress.FirstOrDefault(p => p.UserId == user.Id);
+        if (prog == null)
+        {
+            continue;
+        }
+
+        prog.Levels.TryGetValue("1", out var rec);
+        rec ??= new LevelRecord();
+        rows.Add(new RunLeaderboardRowDto(
+            user.Login,
+            prog.BestRunTimeSeconds,
+            prog.LastRunTimeSeconds,
+            prog.LastRunCoins,
+            rec.Stars,
+            rec.Completed));
+    }
+
+    var ranked = rows
+        .OrderBy(r => r.BestTimeSeconds <= 0 ? int.MaxValue : r.BestTimeSeconds)
+        .ThenByDescending(r => r.Stars)
+        .ThenByDescending(r => r.LastRunCoins)
+        .Select((r, i) => new
+        {
+            place = i + 1,
+            r.Login,
+            r.BestTimeSeconds,
+            r.LastRunTimeSeconds,
+            r.LastRunCoins,
+            r.Stars,
+            r.Completed,
+        })
+        .ToList();
+    return Results.Json(ranked);
+});
+
 app.Run();
 
 static Dictionary<string, LevelRecord> DefaultLevels()
@@ -341,3 +382,10 @@ internal sealed record ProfileDto(
     int BestRunTimeSeconds);
 internal sealed record LevelViewDto(bool Completed, int Stars, bool Unlocked);
 internal sealed record LeaderboardRowDto(string Login, int TotalPoints);
+internal sealed record RunLeaderboardRowDto(
+    string Login,
+    int BestTimeSeconds,
+    int LastRunTimeSeconds,
+    int LastRunCoins,
+    int Stars,
+    bool Completed);
